@@ -96,6 +96,10 @@ button{
   padding: 10px;
 }
 
+
+.carta p{
+ font-size: 18px; 
+}
 .Centrar {
   width: 100vw;
   max-width: 1920px;
