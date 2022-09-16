@@ -1,6 +1,7 @@
 {
   box-sizing: border-box;
 }
+
 body{
   font-family: Goudy Old Style;
   margin: 0;
@@ -30,16 +31,14 @@ button{
 }
 
 .video {
-  position: relative;
-  padding-bottom: 70%;
-  padding-top: 0px;
-  overflow: hidden;
+  width: 100vw;
+  height: 50vw;
+  max-width: 1920px;
+  min-width: 320px;
+  margin: auto;
 }
 
 .video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -72,16 +71,6 @@ button{
   width: 98%;
 }
 
-.galeria{
-  width: 95%;
-  height: 100%;
-  margin: auto;
-  display: grid;
-  grid-template-columns:repeat(3,1fr);
-  justify-content: space-between;
-  align-items: down;
-  padding: 5px;
-}
   
 .carta:first-child{
   background: blanchedalmond;
@@ -107,21 +96,53 @@ button{
   padding: 10px;
 }
 
-.Centrar img{
-  height: 100%;
+.Centrar {
+  width: 100vw;
+  max-width: 1920px;
+  min-width: 320px;
+  margin: auto;
 }
+
+.Centrar img{
+  width: 100%;
+}
+
 .Biografía{
-  width: 70%;
-  height: 100%;
+  width: 640px;
+  height: 550px;
   background: blanchedalmond;
   border-radius: 10px;
-  margin: calc(50vh - 100%) 
+  margin: calc(50vh - 220px) 
   auto;
   padding:20px 30px;
   text-align: center;
   font-family: Goudy Old Style;
 }
 
+
+.Contenedor{
+  width: 80%;
+  height: 90%;
+  background: blanchedalmond;
+  border-radius: 10px;
+  margin: calc(50vh - 220px) 
+  auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding:20px 30px;
+  text-align: center;
+  font-family: Goudy Old Style;
+}
+
+.Contenedor img{
+  width: 50%;
+  height: auto;
+}
+
+.Contenedor h3{
+  color: darkblue;
+  text-align: center;
+}
 .Bandera{
   background:  #111;
   height: auto;
@@ -131,6 +152,20 @@ button{
   color: white;
 }
 
+.galeria img{
+  width: 100%;
+  margin-top: 5px;
+}
+
+.galeria{
+  flex: 25%;
+  padding: 5px;
+}
+.contenedor{
+  display: flex;
+  padding: 5px;
+  
+}
 .footer-content{
   display: flex;
   align-items: center;
@@ -188,8 +223,8 @@ header{
 }
 
 .logo img{
-   height: 90px;
-   margin: right 10px;
+   height: 40px;
+   margin-right: 10px;
 }
 
 nav a{
@@ -224,28 +259,27 @@ nav a:hover{
   font-size: 25px;
 }
 
-.Fondo {
-  width: 900px;
-  height: 550px;
-  margin: 5px auto;
+.Fondo{
+  width: 90%;
+  height: 80%;
+  flex-wrap: wrap;
+  margin: auto;
   display: flex;
   justify-content: center;
   padding: center;
-
   background: #fff;
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0px 0px 20px rgba(blanchedalmond;);
 }
 
+
 .Contactos{
-  width: 500px;
-  height: 350px;
+  width: 470px;
+  height: 450px;
   background: blanchedalmond;
   border-radius: 10px;
-  margin: calc(50vh - 220px) 
-  auto;
-  padding:20px 30px;
+  margin: 2px 10px 20px 10px;
+  padding:10px 20px;
   text-align: center;
   font-family: Goudy Old Style;
 }
@@ -259,32 +293,33 @@ nav a:hover{
 .Contactos p{
   color: black;
   font-size: 23px;
+  padding: 2px 2px;
   
 }
 
 .Contactos img{
-   width: 200px;
-  height: 190px;
+  width: 150px;
+  height: 120px;
+  padding:20px 30px;
 }
 
 .form p{
   color: black;
-  font-size: 20px;
+  font-size: 25px;
 }
 .form{
   width: 240px;
-  height: 350px;
+  height: 425px;
+  display: inline;
   background: blanchedalmond;
   border-radius: 10px;
-  margin: calc(50vh - 220px) 
-  auto;
-  padding:20px 30px;
+  margin: 25px 10px 20px 10px;
   text-align: center;
   font-family: Goudy Old Style;
 
 }
 h1 {  
-  font-size: 60px;
+  font-size: 35px;
   color: skyblue;
   text-align: center;
   background-color: blanchedalmond;
@@ -297,6 +332,16 @@ h2 {
 }
 
 h4 {
-  font-size: 10px;
+  font-size: 8px;
   text-align: center;
+}
+
+li {
+ font-size: 5px; 
+ text-size-adjust: 100%;
+}
+
+p {
+ font-size: 12px;  
+ text-size-adjust: 100%;
 }
